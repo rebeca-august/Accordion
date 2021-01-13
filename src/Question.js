@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
-const Question = ({ id, title, info }) => {
+const Question = ({ title, info }) => {
   const [showInfo, setShowInfo] = useState(false)
 
   return (
