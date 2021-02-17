@@ -1,8 +1,13 @@
 import React, { useState } from 'react'
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
-const Question = ({ title, info }) => {
-  const [showInfo, setShowInfo] = useState(false)
 
+type Props = {
+  title: string
+  info: string
+}
+
+const Question = ({ title, info }: Props) => {
+  const [showInfo, setShowInfo] = useState(false)
   return (
     <article className="question">
       <header>
